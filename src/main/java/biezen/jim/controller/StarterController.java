@@ -12,8 +12,9 @@ import java.io.IOException;
 public class StarterController {
 
     @RequestMapping("/start")
-    public void start() throws IOException {
+    public String start() throws IOException {
         Process p = Runtime.getRuntime().exec("python /home/pi/dev/pi-motion/pi-motion/pi-surveillance.py --conf conf.json");
+        return "Started";
     }
 
 
