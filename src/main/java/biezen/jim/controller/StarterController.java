@@ -23,7 +23,7 @@ public class StarterController {
 
     @RequestMapping("/start")
     public String start() throws IOException, InterruptedException {
-        runProgram("python /home/pi/dev/pi-motion/pi-motion/pi-surveillance.py --conf conf.json");
+        runProgram("/home/pi/dev/pi-motion/pi-motion/test.sh");
         return "Started";
     }
 
