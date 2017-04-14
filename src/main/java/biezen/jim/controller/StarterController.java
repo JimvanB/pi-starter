@@ -22,8 +22,8 @@ public class StarterController {
     }
 
     @RequestMapping("/start")
-    public String start() throws IOException {
-        Process p = Runtime.getRuntime().exec("python /home/pi/dev/pi-motion/pi-motion/pi-surveillance.py --conf conf.json");
+    public String start() throws IOException, InterruptedException {
+        runProgram("python /home/pi/dev/pi-motion/pi-motion/pi-surveillance.py --conf conf.json");
         return "Started";
     }
 
