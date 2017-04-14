@@ -13,7 +13,7 @@ public class StarterController {
 
     @RequestMapping("/start")
     public void start() throws IOException {
-        Process p = Runtime.getRuntime().exec("python yourapp.py");
+        Process p = Runtime.getRuntime().exec("python /home/pi/dev/pi-motion/pi-motion/pi-surveillance.py --conf conf.json");
     }
 
 
