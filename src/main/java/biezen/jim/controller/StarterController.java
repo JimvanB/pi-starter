@@ -17,5 +17,10 @@ public class StarterController {
         return "Started";
     }
 
+    @RequestMapping("/stop")
+    public String stop(){
+        return "Stop";
+    }
+
 
 }
